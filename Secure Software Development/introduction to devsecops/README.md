@@ -20,9 +20,11 @@ This room is the first step in a new DevSecOps learning path, covering:
 ## The Story of DevOps
 
 ### Waterfall Model
+<p align="center"><img src="1a.png"></p>
 The traditional approach to project management in the 70s, where each team member had specific responsibilities. However, it led to friction and inefficiency due to blame games and backlog accumulation.
 
 ### Agile Model
+<p align="center"><img src="1b.png"></p>
 Introduced in the early 2000s, Agile focused on flexibility and adaptability, with an emphasis on collaboration and responsiveness.
 
 ### DevOps: A New Hope
