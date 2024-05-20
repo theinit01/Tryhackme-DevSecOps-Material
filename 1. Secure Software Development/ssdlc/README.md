@@ -233,3 +233,62 @@ Penetration Testing includes vulnerability testing but goes more in-depth. It is
 - Requires extensive planning and time to carry out the tests
 
 
+# SSDLC Methodologies
+
+You can follow different methodologies to best integrate security into the SDLC. Regardless of the chosen development methodology (Agile, DevOps, Extreme Waterfall, etc.), there is a need to:
+
+- Build with security in mind
+- Introduce testing focused on security
+
+Several methodologies for SDLC are widely used:
+
+## Microsoft's Security Development Lifecycle (SDL)
+
+### SDL Principles
+- **Secure by Design**: Security is a built-in quality attribute affecting the whole software lifecycle.
+- **Security by Default**: Software systems are constructed to minimize potential harm caused by attackers, e.g., software is deployed with the least necessary privilege.
+- **Secure in Deployment**: Software deployment is accompanied by tools and guidance supporting users and administrators.
+- **Communications**: Software developers are prepared for occurring threats by communicating openly and timely with users and administrators.
+
+SDL is a collection of mandatory security activities grouped by the traditional software development lifecycle phases. Data is collected to assess training effectiveness. In-process metrics are used to confirm process compliance. Post-release metrics are used to guide future changes. SDL places heavy emphasis on understanding the cause and effect of security vulnerabilities. A development team must complete the mandatory security activities to comply with the Microsoft SDL process. You can implement SDL by following these practices:
+
+### Practices
+
+| Practice | Why? |
+| -------- | ---- |
+| **Provide Training** | Engineers, program, and product managers must understand security basics and know how to build security into software and services to make products more secure while still addressing business needs and delivering user value. Practical training will complement and re-enforce security policies, SDL practices, standards, and software security requirements and be guided by insights derived through data or newly available technical capabilities. |
+| **Define Security Requirements** | Considering security and privacy is a fundamental aspect of developing highly secure applications and systems. Regardless of the development methodology being used, must continually update security requirements to reflect changes in required functionality and changes to the threat landscape. |
+| **Define Metrics and Compliance Reporting** | It is essential to define the minimum acceptable levels of security quality and hold engineering teams accountable for meeting those criteria. Defining these early helps a team understand risks associated with security issues, identify and fix security defects during development, and apply the standards throughout the entire project. |
+| **Perform Threat Modeling** | This practice allows development teams to consider, document, and discuss the security implications of designs in their planned operational environment and in a structured fashion. Applying a structured approach to threat scenarios helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, make security feature selections and establish appropriate mitigations. |
+| **Establish Design Requirements** | The SDL is typically thought of as assurance activities that help engineers implement "secure features," in that the features are well-engineered concerning security. Engineers will normally rely on security features, such as cryptography, authentication, logging, etc. In many cases, the selection or implementation of security features has proven so complicated that design or implementation choices are likely to result in vulnerabilities. Therefore, it's crucially essential to apply these consistently and with a consistent understanding of their protection. |
+| **Define and Use Cryptography Standards** | It's critically important to ensure all data, including security-sensitive information and management and control data, is protected from unintended disclosure or alteration when transmitted or stored. Encryption is typically used to achieve this. E.g., only use industry-vetted encryption libraries and ensure they're implemented to allow them to be easily replaced if needed. |
+| **Manage the Security Risk of Using Third-Party Components** | When selecting third-party components to use, it's essential to understand the impact of a security vulnerability on the security of the more extensive system into which they are integrated. Having an accurate inventory of third-party components and a plan to respond when new vulnerabilities are discovered will go a long way toward mitigating this risk. |
+| **Use Approved Tools** | Define and publish a list of approved tools and their associated security checks, such as compiler/linker options and warnings. Engineers should strive to use the latest version of approved tools, such as compiler versions, and take advantage of new security analysis functionality and protections. |
+| **Perform Security Testing (SAST, DAST, IAST)** | Analyzing the source code before compilation provides a highly scalable method of security code review and helps ensure that secure coding policies are being followed. The same goes for performing run-time verification of your fully compiled or packaged software checks functionality that is only apparent when all components are integrated and running. |
+| **Perform Security Assessments: Vulnerability Assessment & Penetration Testing** | The objective of a penetration test is to uncover potential vulnerabilities resulting from coding errors, system configuration faults, or other operational deployment weaknesses. As such, the test typically finds the widest variety of vulnerabilities. |
+| **Establish a Standard Incident Response Process** | Preparing an Incident Response Plan is crucial for helping to address new threats that can emerge over time. The plan should include whom to contact in case of a security emergency and establish the protocol for security servicing, including methods for code inherited from other groups within the organization and for third-party code. |
+
+## OWASP's S-SDLC
+
+### S-SDLC Principles
+
+- SDL is a collection of mandatory security activities grouped by the traditional software development lifecycle phases.
+- Data is collected to assess training effectiveness.
+- In-process metrics are used to confirm process compliance.
+- Post-release metrics are used to guide future changes.
+- SDL places heavy emphasis on understanding the cause and effect of security vulnerabilities.
+- A development team must complete the sixteen mandatory security activities to comply with the Microsoft SDL process.
+
+### OWASP SSDLC Methodology
+
+OWASP S-SDLC aims to build "security quality gates" to support quality and secure software made throughout the pipeline. This is done by following an Agile Security approach, where sprints are dedicated to security. Examples of sprints can include: Code reviews, authentication, authorization, input validation, and assessing technical risks like code injections. The gates comprise sprints focusing on similar building blocks like those seen in Microsoft SDL. OWASP S-SDLC Agile approach is heavily influenced and based on a "Maturity Model" approach, in particular, OWASP SAMM. The Software Assurance Maturity Model (SAMM) is an open framework to help organizations formulate and implement a software security strategy tailored to the organization's specific risks. It helps to evaluate an organization's existing software security practices, build a software security assurance program, demonstrate improvements to that program, and define and measure security activities for an organization. SAMM helps explain objectives, actions, results, success metrics, costs, etc. An example would be a security scorecard for gap analysis, for instance, in a particular area, like endpoint protection. It aims to answer "How well are we doing and where do we want to get to?".
+
+[OWASP SAMM link](https://owaspsamm.org/)
+
+### BSIMM
+
+Another critical security model is the Building Security In Maturity Model (BSIMM). BSIMM is a study of real-world software security initiatives and reflects the current state of software security. BSIMM can be described as a "measuring stick" to understand your security posture by providing a comparison of other companies' security states. In other words, it does not tell you what you should do but rather what you are doing wrong. There are hundreds of organizations involved.
+
+[BSIMM link](https://www.bsimm.com/)
+
+
