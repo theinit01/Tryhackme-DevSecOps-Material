@@ -42,6 +42,7 @@ DevOps fosters trust and collaboration between developers and other teams, align
 For more details, visit [History of DevOps](https://www.appknox.com/blog/history-of-devops).
 
 # The Infinte Loop
+<p align="center"><img src="1c.png"></p>
 ## Introduction to DevOps Concepts and Tools
 
 In the previous task, we explored the evolution of software development styles and how they contributed to the inception of DevOps. This task introduces key concepts, tools, and their integration within the DevOps framework.
