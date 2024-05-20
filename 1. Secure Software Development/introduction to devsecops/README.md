@@ -54,7 +54,6 @@ In the previous task, we explored the evolution of software development styles a
 DevOps is visualized as an infinite loop, encompassing various phases of the development lifecycle.
 
 
-
 ### Key DevOps Tools & Processes
 
 #### CI/CD (Continuous Integration and Continuous Deployment)
