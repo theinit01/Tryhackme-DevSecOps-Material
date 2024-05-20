@@ -82,7 +82,7 @@ The quantitative risk assessment is used to measure risk with numerical values. 
 
 For example, suppose there are services with assigned business criticality levels. In that case, you can say that if a bug affects a business-critical service (an authentication service, a payment infrastructure, etc.), you will assign 5 points. This highlights why it is vital to understand a security posture and its processes. Measuring risk and priority with an endemic equation to a company's services will have great results. An example of a quantitative risk assessment matrix can be seen below:
 
-<p align="center"><img src="3c.png" width= "500"></p>
+<p align="center"><img src="3c.png" width= "300"></p>
 
 Risk assessments are better performed at the beginning of the SDLC, during the planning and requirement phases. For example, "Customer data gets exfiltrated by an attack". Once the system is developed, you can perform quantitative risk analysis: "One customer can sue us for $20,000 if their data gets leaked", and we have 100 customers. However, the Annual Rate of Occurrence (ARO) is 0.001. Hence, Annual Loss Expectancy (ALE) is calculated as follows:
 
