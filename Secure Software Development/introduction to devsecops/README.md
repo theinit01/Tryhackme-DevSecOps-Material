@@ -20,11 +20,11 @@ This room is the first step in a new DevSecOps learning path, covering:
 ## The Story of DevOps
 
 ### Waterfall Model
-<p align="center"><img src="1a.png" height="40%" width= "40%"></p>
+<p align="center"><img src="1a.png" width= "500"></p>
 The traditional approach to project management in the 70s, where each team member had specific responsibilities. However, it led to friction and inefficiency due to blame games and backlog accumulation.
 
 ### Agile Model
-<p align="center"><img src="1b.png"></p>
+<p align="center"><img src="1b.png" width= "500"></p>
 Introduced in the early 2000s, Agile focused on flexibility and adaptability, with an emphasis on collaboration and responsiveness.
 
 ### DevOps: A New Hope
@@ -43,7 +43,7 @@ For more details, visit [History of DevOps](https://www.appknox.com/blog/history
 
 # The Infinte Loop
 
-<p align="center"><img src="1c.png" height = "40"></p>
+<p align="center"><img src="1c.png" width= "500"></p>
 
 ## Introduction to DevOps Concepts and Tools
 
@@ -53,7 +53,7 @@ In the previous task, we explored the evolution of software development styles a
 
 DevOps is visualized as an infinite loop, encompassing various phases of the development lifecycle.
 
-![DevOps Lifecycle](devops_lifecycle_diagram.png)
+
 
 ### Key DevOps Tools & Processes
 
