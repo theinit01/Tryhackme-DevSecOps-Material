@@ -283,4 +283,6 @@ In this updated codebase, we have the following:
 - Used the `os.Getenv()` function to read the `NOSTROMO_API_URL`, `NOSTROMO_USERNAME`, and `NOSTROMO_PASSWORD` environment variables, which can be managed using GitLab's secrets management feature.
 - Since `os.Getenv` retrieves sensitive information such as database credentials, the `nostromo.go` codebase is more secure and easier to maintain. If the credentials need to be updated or rotated, they can be updated in the environment variables without modifying the code directly.
 
+<p align="center"><img src="newe.png" width= "500"></p>
+
 **Don't merge the changes yet, we still haven't finished securing the Nostromo API. Continue to the next task to retrieve the final flag!**
