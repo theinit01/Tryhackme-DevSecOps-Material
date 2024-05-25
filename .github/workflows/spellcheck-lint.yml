@@ -1,0 +1,32 @@
+name: Spellcheck and Lint Markdown
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install Spellchecker
+      run: |
+        python -m pip install codespell
+
+    - name: Install Markdownlint
+      run: |
+        npm install -g markdownlint-cli
+
+    - name: Run Spellchecker
+      run: |
+        codespell --ignore-words-list="crate,crate's" .
+
+    - name: Run Markdownlint
+      run: |
+        markdownlint **/*.md
